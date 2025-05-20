@@ -2,6 +2,7 @@
 #include "Integer.h"
 
 //podpunkt 4
+//W tym przypadku jest konieczne, aby funkcja byla zaprzyjaziona z klasa. Funkcja musi miec dostep do pol klasy
 
 void add(Integer& obiekt, int skladnik) {
     obiekt.liczba += skladnik;
@@ -14,7 +15,7 @@ int main()
     Integer obiektDrugi;
     const Integer obiektTrzeci;
 
-    //nie mozna przypisac bezposrednio do zmiennej skladowej poniewaz jest to pole prywatne
+    //nie mozna bezposrodnio zmieniac pola prywatnego
 
     obiektPierwszy.setLiczba(5);
     std::cout << "Wartosc obiektu pierwszego: " << obiektPierwszy.getLiczba() << std::endl;
@@ -22,7 +23,7 @@ int main()
     obiektDrugi.setLiczba(3);
     std::cout << "Wartosc obiektu drugiego: " << obiektDrugi.getLiczba() << std::endl;
 
-    //nie mozna uzyc metody setLiczba poniewaz pola obiektu const nie moga byc zmieniane
+    //pola obiektu const nie moga byc zmieniane, wiec uzycie setLiczba jest niemozliwe
 
     std::cout << "Wartosc obiektu trzeciego: " << obiektTrzeci.getLiczba() << std::endl;
 
