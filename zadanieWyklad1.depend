@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1747757532 source:d:\c++\15.02.2021\zadaniewyklad1\main.cpp
+	<iostream>
+	"Integer.h"
+
+1747761612 d:\c++\15.02.2021\zadaniewyklad1\include\integer.h
+
+1747761019 source:d:\c++\15.02.2021\zadaniewyklad1\src\integer.cpp
+	"Integer.h"
+	<iostream>
+
